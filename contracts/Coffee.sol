@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.19;
 
+// deployed at 0xfCeC1d6789591396751fFA4653fca4213Bd26d73
+
 contract Coffee {
     struct Message {
         address sender;
