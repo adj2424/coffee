@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.19;
 
-contract Test {
+contract Coffee {
     struct Message {
         address sender;
         string name;
@@ -32,7 +32,7 @@ contract Test {
         messages.push(message);
     }
 
-    function withdrawAll() private {
+    function withdrawAll() public {
         require(deployer == msg.sender, "You are not the owner");
         //transfer funds from contract to deployer
         deployer.transfer(address(this).balance);
